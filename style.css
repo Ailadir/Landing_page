@@ -54,9 +54,7 @@ p, h1, h2, h3, h4, h5, h6 {
     object-fit:cover;
     z-index: -1;
 }
-embed{
-    display: none;
-}
+
 /*  */
 /* Its menu */
 /*  */
@@ -86,13 +84,16 @@ header .navbar{
     padding: 20px 20px 20px 20px;
 }
 
-.navbar_menu .navbar_item a{
+.navbar_menu .navbar_item a,span{
     font-size: 20px;
     text-decoration: none;
     color:white
 }
-.navbar_item a:hover{
+.navbar_item a:hover,span:hover{
     color:teal
+}
+.navbar_item span{
+    cursor: grab;
 }
 /*  */
 /* It's style for  content on first page */

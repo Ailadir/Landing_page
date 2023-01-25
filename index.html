@@ -14,26 +14,27 @@
 </head>
 
 <body>
-    <embed src="ff2.mp3" autostart="true" loop="true" controls="hidden">
     <div class="video_container">
         <video autoplay muted loop id="background">
             <source src="background.mp4" type="video/mp4">
         </video>
     </div>
     <header>
-        <div class="navbar"><img src="img/logo.png" alt="One Piece logo">
-            <div class="menu_wrapper" id="hamnav">
-                <label for="hamburger">&#9776;</label>
-                <input type="checkbox" id="hamburger" />
+        <div class="navbar">
+            <img src="img/logo.png" alt="One Piece logo" onclick="playSound()>
+            <div class=" menu_wrapper" id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
 
-                <ol class="navbar_menu" id="hamitems">
-                    <li class="navbar_item"><a href="#home">Home</a></li>
-                    <li class="navbar_item"><a href="#about">About</a></li>
-                    <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
+            <ol class="navbar_menu" id="hamitems">
+                <li class="navbar_item"><a href="#home">Home</a></li>
+                <li class="navbar_item"><a href="#about">About</a></li>
+                <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
                         _blank">Media</a></li>
-                    <li class="navbar_item"><a href="#contacts">Contacts</a></li>
-                </ol>
-            </div>
+                <li class="navbar_item"><a href="#contacts">Contacts</a></li>
+                <li class="navbar_item"><span onclick="playSound()">Music</span></li>
+            </ol>
+        </div>
         </div>
     </header>
     <div class="first_page" id="home">
@@ -91,7 +92,7 @@
         </footer>
     </div>
 
-    <script src=""></script>
+    <script src="audio.js"></script>
 </body>
 
 </html>
