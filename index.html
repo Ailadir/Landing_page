@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>One-Piece</title>
+    <link rel="icon" type="image/x-icon" href="/GitHub/Landing_page/img/favicon.ico">
 </head>
 
 <body>
@@ -18,35 +19,38 @@
     <header>
         <div class="navbar"><img src="img/logo.png" alt="One Piece logo">
             <ol class="navbar_menu">
-                <li class="navbar_item home"><a href="#">Home</a></li>
-                <li class="navbar_item about"><a href="#">About</a></li>
-                <li class="navbar_item character"><a href="#">Character</a></li>
-                <li class="navbar_item contacts"><a href="#">Contacts</a></li>
+                <li class="navbar_item"><a href="#home">Home</a></li>
+                <li class="navbar_item"><a href="#about">About</a></li>
+                <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
+                        _blank">Media</a></li>
+                <li class="navbar_item"><a href="#contacts">Contacts</a></li>
         </div>
     </header>
-    <div class="first_page">
+    <div class="first_page" id="home">
         <div class="first_page_text">
         </div>
     </div>
-    <div class="second_page">
+    <div class="second_page" id="about">
         <div class="second_page_title">
             I welcome you in our information section!
-            <hr class="hr_1">
+            <hr>
         </div>
         <div class="second_page_content">
             <div class="character">
                 <p>Character</p>
-                <img src="img/character.png" alt="character">
+                <a href="https://onepiece.fandom.com/wiki/Category:Characters"><img src="img/character.png"
+                        alt="character"></a>
             </div>
         </div>
     </div>
     <div class="empty_space">
     </div>
-    <div class="third_page">
+    <div class="third_page" id="contacts">
+        <footer>
+            <p>&copy;</p>
+        </footer>
     </div>
-    <!-- <footer>
-        <p>&copy;</p>
-    </footer> -->
+
     <script src=""></script>
 </body>
 

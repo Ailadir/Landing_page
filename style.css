@@ -40,7 +40,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* CSS RESET */
 
-
+*{
+    scroll-behavior: smooth;
+}
 
 .video_container #background{
     position:fixed;
@@ -92,42 +94,65 @@ header .navbar{
 
 .second_page{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     z-index: 2;
-    height:80vh;
+    height:100%;
     width:100%;
-    background-color:#168e8a;
+    background-color:#168e8abb;
 }
 
+
 .second_page .second_page_title{
+    text-align: center;
+    width:100%;
     color:white;
     font-size: 25px;
+    margin:20px 0px 20px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
-.hr1{
-    color:black;
-    width:100%
+hr{
+    border-color: white ;
 }
 .second_page_content{
     display: flex;
     justify-content: flex-start;
     margin-left:20px;
     margin-top:20px;
+    width: 100%;
+    height: auto;
 }
+
+.character{
+    border: 1px solid white;
+    background-color: #ffe4c4;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+.character:hover{
+    box-shadow: 0px 0px 25px 8px rgba(163,23,163,1);
+    transition: box-shadow 0.6s ease-in-out;
+}
+
 .character p{
     color:white;
     font-size:20px;
     text-align: center;
     margin-bottom:-20px;
+    border:1px solid white;
+    background-color:#6495ed;
 }
 .empty_space{
-    height:100vh;
+    height:100%;
 }
 
 .third_page{
-    height:100vh;
+    
+    height:50%;
     background-color: rgba(0, 0, 0, 0.562);
+    color:white
 }
+
 /* .first_page .first_page_title{
     display: flex;
     flex-wrap:wrap;
