@@ -54,6 +54,9 @@ p, h1, h2, h3, h4, h5, h6 {
     object-fit:cover;
     z-index: -1;
 }
+embed{
+    display: none;
+}
 /*  */
 /* Its menu */
 /*  */
@@ -209,6 +212,7 @@ hr{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: wrap;
     height:50%;
     width:100%;
     background-color: rgba(0, 0, 0, 0.562);
