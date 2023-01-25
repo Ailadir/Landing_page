@@ -9,6 +9,7 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -43,31 +44,34 @@ p, h1, h2, h3, h4, h5, h6 {
 *{
     scroll-behavior: smooth;
 }
-
+/*  */
+/* Its background  */
+/*  */
 .video_container #background{
     position:fixed;
     width: 100%;
     height:100%;
     object-fit:cover;
-    right:0;
-    bottom:0;
-    z-index: -2;
+    z-index: -1;
 }
-
-
+/*  */
+/* Its menu */
+/*  */
 header .navbar{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top:0;
     z-index: 0;
     width:100%;
     background-color:rgba(6, 5, 5, 0.325)
 }
+#hamnav label, #hamburger{
+    display:none;
+}
 
 .navbar img{
     width: 15rem;
-    height: auto;
+    max-height: 82.465px;
 }
 
 .navbar ol{
@@ -84,85 +88,159 @@ header .navbar{
     text-decoration: none;
     color:white
 }
-
+.navbar_item a:hover{
+    color:teal
+}
+/*  */
+/* It's style for  content on first page */
+/*  */
 .first_page {
-    position: relative;
-    z-index: 2;
-    width:50px;
-    height:100vh;
+    z-index: 1;
+    width:100%;
+    height:100%;
 }
 
+#luffy_text{
+    position: absolute;
+    left:50%;
+    top:40%;
+    width:250px;
+    
+}
+/*  */
+/* It's style for content on second page */
+/*  */
 .second_page{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    height:100%;
+    z-index: 1;
+    min-height:100%;
     width:100%;
     background-color:#168e8abb;
 }
 
-
+/*  */
+/* It's second page title */
 .second_page .second_page_title{
     text-align: center;
     width:100%;
     color:white;
     font-size: 25px;
-    margin:20px 0px 20px 0px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:0px
 }
 hr{
+    margin-top:10px;
+    margin-bottom:10px;
     border-color: white ;
 }
+/*  */
+/* It's container for section's on second page */
 .second_page_content{
     display: flex;
-    justify-content: flex-start;
-    margin-left:20px;
-    margin-top:20px;
-    width: 100%;
-    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: auto;
 }
-
-.character{
+/* It's style for content
+ in second page container */
+.container{
     border: 1px solid white;
     background-color: #ffe4c4;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    margin:15px 15px;
+    min-width: 300px;
+    min-height: 477.326px;
 }
-.character:hover{
+.container:hover{
     box-shadow: 0px 0px 25px 8px rgba(163,23,163,1);
     transition: box-shadow 0.6s ease-in-out;
 }
 
-.character p{
+.container p{
     color:white;
     font-size:20px;
     text-align: center;
-    margin-bottom:-20px;
+    margin-bottom:20px; 
     border:1px solid white;
     background-color:#6495ed;
 }
-.empty_space{
-    height:100%;
+.character p {
+    margin-bottom:-20px;
+
+}
+.container img{
+    min-width:300px;
+    width:300px;
+    height: auto;
 }
 
+
+/*  */
+/* It's style for content on third page */
+/*  */
 .third_page{
+    display: flex;
+    height:100%;
+    width: 100%;
+}
+.luffy_quote{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color:black;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/*  */
+/* It's style for content on forth page */
+/*  */
+.forth_page{
     
     height:50%;
     background-color: rgba(0, 0, 0, 0.562);
     color:white
 }
 
-/* .first_page .first_page_title{
-    display: flex;
-    flex-wrap:wrap;
-} */
+footer{
+    align-items: flex-end;
+    text-align: center;
+}
 
-/* iframe{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%,-50%);
-} */
+@media only screen and (max-width: 960px){
+    #about{
+        display: flex;
+        flex-direction: column;   
+    }
+    #luffy_text{
+        top:35%;
+        left:48%;
+        width:250px;
+    }
+
+    .navbar_menu{
+        flex-direction: column;
+    }
+
+    #hamnav label{
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    #hamitems{
+        display: none;
+    }
+    #hamnav input:checked ~ #hamitems { display: block; }
+
+}

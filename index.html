@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <title>One-Piece</title>
     <link rel="icon" type="image/x-icon" href="/GitHub/Landing_page/img/favicon.ico">
 </head>
@@ -18,16 +21,23 @@
     </div>
     <header>
         <div class="navbar"><img src="img/logo.png" alt="One Piece logo">
-            <ol class="navbar_menu">
-                <li class="navbar_item"><a href="#home">Home</a></li>
-                <li class="navbar_item"><a href="#about">About</a></li>
-                <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
+            <div class="menu_wrapper" id="hamnav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+
+                <ol class="navbar_menu" id="hamitems">
+                    <li class="navbar_item"><a href="#home">Home</a></li>
+                    <li class="navbar_item"><a href="#about">About</a></li>
+                    <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
                         _blank">Media</a></li>
-                <li class="navbar_item"><a href="#contacts">Contacts</a></li>
+                    <li class="navbar_item"><a href="#contacts">Contacts</a></li>
+                </ol>
+            </div>
         </div>
     </header>
     <div class="first_page" id="home">
         <div class="first_page_text">
+            <img id="luffy_text" src="img/first_page.png" alt="">
         </div>
     </div>
     <div class="second_page" id="about">
@@ -36,18 +46,42 @@
             <hr>
         </div>
         <div class="second_page_content">
-            <div class="character">
+            <div class="character container">
                 <p>Character</p>
-                <a href="https://onepiece.fandom.com/wiki/Category:Characters"><img src="img/character.png"
-                        alt="character"></a>
+                <a href="https://onepiece.fandom.com/wiki/Category:Characters" target="_blank"><img
+                        src="img/character.png" alt="character"></a>
+            </div>
+            <div class="location container">
+                <p>Locations</p>
+                <a href="https://onepiece.fandom.com/wiki/Category:Locations" target="_blank"><img
+                        src="img/location.png" alt="location map"></a>
+            </div>
+            <div class="organization container">
+                <p>Organizations</p>
+                <a href="https://onepiece.fandom.com/wiki/Category:Organizations" target="_blank">
+                    <div class="img">
+                        <img src="img/org1.png" alt="pirates">
+                        <hr><img src="img/org2.png" alt="marines">
+                    </div>
+                </a>
+            </div>
+            <div class="society container">
+                <p> Society and Culture</p>
+                <a href="https://onepiece.fandom.com/wiki/Category:Society_and_Culture" target="_blank"><img
+                        src="img/society.png" alt="merflok image"></a>
             </div>
         </div>
     </div>
-    <div class="empty_space">
+    <div class="third_page">
+        <div class="luffy_quote">
+            <p>“If you don’t take risks, you can’t create a future.”</p>
+            <p>Monkey D. Luffy</p>
+
+        </div>
     </div>
-    <div class="third_page" id="contacts">
+    <div class="forth_page" id="contacts">
         <footer>
-            <p>&copy;</p>
+            <p>Doc.Schwarz aka Ailadir with "The Odin Project"&copy;</p>
         </footer>
     </div>
 
