@@ -100,14 +100,14 @@ header .navbar{
 /*  */
 .first_page {
     z-index: 1;
-    width:100%;
-    height:100%;
+    min-width:100%;
+    min-height:100%;
 }
 
 #luffy_text{
     position: absolute;
     left:50%;
-    top:40%;
+    top:38%;
     width:250px;
     
 }
@@ -119,8 +119,10 @@ header .navbar{
     flex-direction: column;
     z-index: 1;
     min-height:100%;
-    width:100%;
+    min-width:100%;
     background-color:#168e8abb;
+    flex-grow:1;
+    flex-shrink: 1;
 }
 
 /*  */
@@ -146,7 +148,7 @@ hr{
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100%;
-    width: auto;
+    width:100%;
 }
 /* It's style for content
  in second page container */
@@ -208,28 +210,34 @@ hr{
 /*  */
 /* It's style for content on forth page */
 /*  */
-.forth_page{
-    display: flex;
+#contacts{
+    display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
     flex-wrap: wrap;
-    height:50%;
-    width:100%;
+    /* justify-content: center;
+    align-items: center; */
     background-color: rgba(0, 0, 0, 0.562);
     color:white
 }
 
+.contacts_link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
 .forth_page img{
-    padding:20px;
-    width:100px;
+    padding:40px;
+    width:150px;
     height: auto;
 }
 
 .forth_page footer{
     width: 100%;
     text-align: center;
-    flex-direction: row;
 }
 
 @media only screen and (max-width: 960px){
@@ -238,9 +246,9 @@ hr{
         flex-direction: column;   
     }
     #luffy_text{
-        top:35%;
-        left:48%;
-        width:250px;
+        top:45%;
+        left:55%;
+        width:150px;
     }
 
     .navbar_menu{
@@ -248,7 +256,7 @@ hr{
     }
 
     #hamnav label{
-        display: inline-block;
+        display: inline-flex;
         color: white;
         padding: 20px;
         font-size: 25px;
