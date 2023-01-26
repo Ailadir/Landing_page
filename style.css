@@ -74,6 +74,9 @@ header .navbar{
     width: 15rem;
     max-height: 82.465px;
 }
+.navbar img:hover{
+    cursor:pointer;
+}
 
 .navbar ol{
     display:inline-flex;
@@ -90,7 +93,7 @@ header .navbar{
     color:white
 }
 .navbar_item a:hover,span:hover{
-    color:teal
+    color:#d67703
 }
 .navbar_item span{
     cursor: grab;
@@ -145,18 +148,22 @@ hr{
 /* It's container for section's on second page */
 .second_page_content{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     height: 100%;
     width:100%;
+
 }
 /* It's style for content
  in second page container */
+.second_page a{
+   text-decoration: none;
+}
 .container{
     border: 1px solid white;
     background-color: #ffe4c4;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-    margin:15px 15px;
+    margin:15px -15px 15px -15px;
     min-width: 300px;
     min-height: 477.326px;
 }
@@ -200,7 +207,7 @@ hr{
     justify-content: center;
     width: 100%;
     height: 100%;
-    color:black;
+    color:whitesmoke;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     font-size: 60px;
     text-align: center;
@@ -217,7 +224,7 @@ hr{
     /* justify-content: center;
     align-items: center; */
     background-color: rgba(0, 0, 0, 0.562);
-    color:white
+    color:white;
 }
 
 .contacts_link{
@@ -230,9 +237,10 @@ hr{
 }
 
 .forth_page img{
-    padding:40px;
-    width:150px;
+    width:100px;
     height: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .forth_page footer{
@@ -240,6 +248,14 @@ hr{
     text-align: center;
 }
 
+
+footer a{
+    text-decoration: none;
+    color:white
+}
+footer a:hover{
+    color:#d67703
+}
 @media only screen and (max-width: 960px){
     #about{
         display: flex;
