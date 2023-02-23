@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
     <title>One-Piece</title>
-    <link rel="icon" type="image/x-icon" href="/GitHub/Landing_page/img/favicon.ico">
-</head>
+    <link rel="icon" type="image/x-icon" href="/GitHub/Landing_page/img/favicon.ico" />
+  </head>
 
-<body>
+  <body>
     <div class="video_container">
-        <video autoplay muted loop id="background">
-            <source src="background.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="background">
+        <source src="background.mp4" type="video/mp4" />
+      </video>
     </div>
     <header>
-        <div class="navbar">
-            <img src="img/logo.png" alt="One Piece logo" onclick="playsong()" ondblclick="pausesong()">
-            <div class=" menu_wrapper" id="hamnav">
-                <label for="hamburger">&#9776;</label>
-                <input type="checkbox" id="hamburger" />
-                <ol class="navbar_menu" id="hamitems">
-                    <li class="navbar_item"><a href="#home">Home</a></li>
-                    <li class="navbar_item"><a href="#about">About</a></li>
-                    <li class="navbar_item"><a href="https://www.youtube.com/results?search_query=One+Piece" target="
-                            _blank">Media</a></li>
-                    <li class="navbar_item"><a href="#contacts">Contacts</a></li>
-                </ol>
-            </div>
+      <div class="navbar">
+        <img src="img/logo.png" alt="One Piece logo" onclick="playsong()" ondblclick="pausesong()" />
+        <div class="menu_wrapper" id="hamnav">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ol class="navbar_menu" id="hamitems">
+            <li class="navbar_item"><a href="#home">Home</a></li>
+            <li class="navbar_item"><a href="#about">About</a></li>
+            <li class="navbar_item">
+              <a
+                href="https://www.youtube.com/results?search_query=One+Piece"
+                target="
+                            _blank">
+                Media
+              </a>
+            </li>
+            <li class="navbar_item"><a href="#contacts">Contacts</a></li>
+          </ol>
         </div>
+      </div>
     </header>
     <div class="first_page" id="home">
-        <div class="first_page_text">
-            <img id="luffy_text" src="img/first_page_luffy.png" alt="">
-        </div>
+      <div class="first_page_text">
+        <img class="luffy_text" src="img/first_page_luffy.png" alt="" />
+      </div>
     </div>
     <div class="second_page" id="about">
-        <div class="second_page_title">
-            I welcome you in our information section!
-            <hr>
-        </div>
-        <div class="second_page_content">
-            <a href="https://onepiece.fandom.com/wiki/Category:Characters" target="_blank">
-                <div class="character container">
+      <div class="second_page_title">
+        I welcome you in our information section!
+        <hr />
+      </div>
+      <div class="second_page_content">
+        <a href="https://onepiece.fandom.com/wiki/Category:Characters" target="_blank">
+          <div class="character container">
+            <p>Character</p>
+            <img src="img/character.png" alt="character" />
+          </div>
+        </a>
+        <a href="https://onepiece.fandom.com/wiki/Category:Locations" target="_blank">
+          <div class="location container">
+            <p>Locations</p>
+            <img src="img/location.png" alt="location map" />
+          </div>
+        </a>
+        <a href="https://onepiece.fandom.com/wiki/Category:Organizations" target="_blank">
+          <div class="organization container">
+            <p>Organizations</p>
 
-                    <p>Character</p>
-                    <img src="img/character.png" alt="character">
-
-                </div>
-            </a>
-            <a href="https://onepiece.fandom.com/wiki/Category:Locations" target="_blank">
-                <div class="location container">
-
-                    <p>Locations</p>
-                    <img src="img/location.png" alt="location map">
-
-                </div>
-            </a>
-            <a href="https://onepiece.fandom.com/wiki/Category:Organizations" target="_blank">
-                <div class="organization container">
-                    <p>Organizations</p>
-
-                    <div class="img">
-                        <img src="img/org1.png" alt="pirates">
-                        <hr><img src="img/org2.png" alt="marines">
-                    </div>
-
-                </div>
-            </a>
-            <a href="https://onepiece.fandom.com/wiki/Category:Society_and_Culture" target="_blank">
-                <div class="society container">
-                    <p> Society and Culture</p>
-                    <img src="img/society.png" alt="merflok image">
-                </div>
-            </a>
-        </div>
+            <div class="img">
+              <img src="img/org1.png" alt="pirates" />
+              <hr />
+              <img src="img/org2.png" alt="marines" />
+            </div>
+          </div>
+        </a>
+        <a href="https://onepiece.fandom.com/wiki/Category:Society_and_Culture" target="_blank">
+          <div class="society container">
+            <p>Society and Culture</p>
+            <img src="img/society.png" alt="merflok image" />
+          </div>
+        </a>
+      </div>
     </div>
     <div class="third_page">
-        <div class="luffy_quote">
-            <p>“If you don’t take risks, you can’t create a future.”</p>
-            <p>Monkey D. Luffy</p>
-
-        </div>
+      <div class="luffy_quote">
+        <p>“If you don’t take risks, you can’t create a future.”</p>
+        <p>Monkey D. Luffy</p>
+      </div>
     </div>
     <div class="forth_page" id="contacts">
-        <div class="contacts_link">
-            <a href="https://github.com/Ailadir" target="_blank"><img src="img/GitHub.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/dmdschwarz/" target="_blank"><img src="img/linkedin.png"
-                    alt="linkedin"></a>
-            <a href="https://twitter.com/Dmd_Schwarz" target="_blank"> <img src="img/twitter.png" alt="twitter"></a>
-        </div>
-        <footer>
-            <a href="https://www.youtube.com/watch?v=Pi_cyih2EBk" target="_blank">Credits for Wallpaper</a>
-            <p>Doc.Schwarz aka Ailadir with "The Odin Project"&copy;</p>
-        </footer>
+      <div class="contacts_link">
+        <a href="https://github.com/Ailadir" target="_blank"><img src="img/GitHub.png" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/dmdschwarz/" target="_blank">
+          <img src="img/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://twitter.com/Dmd_Schwarz" target="_blank"><img src="img/twitter.png" alt="twitter" /></a>
+      </div>
+      <footer>
+        <a href="https://www.youtube.com/watch?v=Pi_cyih2EBk" target="_blank">Credits for Wallpaper</a>
+        <p>Doc.Schwarz aka Ailadir with "The Odin Project"&copy;</p>
+      </footer>
     </div>
 
     <script src="audio.js"></script>
-</body>
-
+  </body>
 </html>

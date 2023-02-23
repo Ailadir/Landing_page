@@ -125,12 +125,17 @@ span:hover {
   min-height: 100%;
 }
 
-#luffy_text {
+.luffy_text {
+  opacity: 1;
+  transform: translate(0);
+  transition: 1s;
   position: absolute;
   left: 50%;
-  top: 38%;
-  width: 250px;
+  top: 36%;
+  width: 15%;
+  height: auto;
 }
+
 /*  */
 /* It's style for content on second page */
 /*  */
@@ -215,6 +220,9 @@ hr {
   width: 100%;
 }
 .luffy_quote {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(-100%);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -269,12 +277,23 @@ footer a {
 footer a:hover {
   color: #d67703;
 }
+
+.fade {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: 1s;
+}
+.fade_in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
 @media only screen and (max-width: 960px) {
   #about {
     display: flex;
     flex-direction: column;
   }
-  #luffy_text {
+  .luffy_text {
     top: 45%;
     left: 55%;
     width: 150px;
