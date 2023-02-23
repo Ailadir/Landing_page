@@ -1,286 +1,300 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin:0;
-    padding:0
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-ol, ul, menu {
-    list-style: none;
+ol,
+ul,
+menu {
+  list-style: none;
 }
 
 img {
-    max-inline-size: 100%;
-    max-block-size: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-input, button, textarea, select {
-    font: inherit;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 /* CSS RESET */
 
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
 /*  */
 /* Its background  */
 /*  */
-.video_container #background{
-    position:fixed;
-    width: 100%;
-    height:100%;
-    object-fit:cover;
-    z-index: -1;
+.video_container #background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /*  */
 /* Its menu */
 /*  */
-header .navbar{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;    
-    z-index: 5;
-    width:100%;
-    background-color:rgba(6, 5, 5, 0.8)
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: rgba(6, 5, 5, 0.8);
 }
-#hamnav label, #hamburger{
-    display:none;
-}
-
-.navbar img{
-    width: 15rem;
-    max-height: 82.465px;
-}
-.navbar img:hover{
-    cursor:pointer;
+#hamnav label,
+#hamburger {
+  display: none;
 }
 
-.navbar ol{
-    display:inline-flex;
-    color:white;
+.navbar img {
+  width: 15rem;
+  max-height: 82.465px;
+}
+.navbar img:hover {
+  cursor: pointer;
 }
 
-.navbar .navbar_menu .navbar_item{
-    padding: 20px 20px 20px 20px;
+.navbar ol {
+  display: inline-flex;
+  color: white;
 }
 
-.navbar_menu .navbar_item a,span{
-    font-size: 20px;
-    text-decoration: none;
-    color:white
+.navbar .navbar_menu .navbar_item {
+  padding: 20px 20px 20px 20px;
 }
-.navbar_item a:hover,span:hover{
-    color:#d67703
+
+.navbar_menu .navbar_item a,
+span {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
-.navbar_item span{
-    cursor: grab;
+.navbar_item a:hover,
+span:hover {
+  color: #d67703;
+}
+.navbar_item span {
+  cursor: grab;
 }
 /*  */
 /* It's style for  content on first page */
 /*  */
 .first_page {
-    z-index: 1;
-    min-width:100%;
-    min-height:100%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-#luffy_text{
-    position: absolute;
-    left:50%;
-    top:38%;
-    width:250px;
-    
+#luffy_text {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  width: 250px;
 }
 /*  */
 /* It's style for content on second page */
 /*  */
-.second_page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    min-height:100%;
-    min-width:100%;
-    background-color:#168e8abb;
-    flex-grow:1;
-    flex-shrink: 0;
+.second_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #168e8abb;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 /*  */
 /* It's second page title */
-.second_page .second_page_title{
-    text-align: center;
-    width: 100%;
-    color:white;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left:0px;
+.second_page .second_page_title {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 0px;
 }
 
-hr{
-    margin-top:10px;
-    border-color: white ;
+hr {
+  margin-top: 10px;
+  border-color: white;
 }
 /*  */
 /* It's container for section's on second page */
-.second_page_content{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    height: 100%;
-    width:80%;
-
+.second_page_content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 80%;
 }
 /* It's style for content
  in second page container */
-.second_page a{
-   text-decoration: none;
+.second_page a {
+  text-decoration: none;
 }
-.container{
-    border: 1px solid white;
-    background-color: #ffe4c4;
-    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-    margin:15px 15px;
-    min-width: 300px;
-    min-height: 477.326px;
+.container {
+  border: 1px solid white;
+  background-color: #ffe4c4;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  margin: 15px 15px;
+  min-width: 300px;
+  min-height: 477.326px;
 }
-.container:hover{
-    box-shadow: 0px 0px 25px 8px rgba(163,23,163,1);
-    transition: box-shadow 0.6s ease-in-out;
+.container:hover,
+.container:hover:after {
+  box-shadow: 0px 0px 25px 8px rgba(163, 23, 163, 1);
+  transition: box-shadow 0.6s ease-in-out;
 }
 
-.container p{
-    color:white;
-    font-size:20px;
-    text-align: center;
-    margin-bottom:20px; 
-    border:1px solid white;
-    background-color:#6495ed;
+.container p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  background-color: #6495ed;
 }
 .character p {
-    margin-bottom:-20px;
-
+  margin-bottom: -20px;
 }
-.container img{
-    min-width:300px;
-    width:300px;
-    height: auto;
+.container img {
+  min-width: 300px;
+  width: 300px;
+  height: auto;
 }
-
 
 /*  */
 /* It's style for content on third page */
 /*  */
-.third_page{
-    display: flex;
-    height:100%;
-    width: 100%;
+.third_page {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
-.luffy_quote{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color:whitesmoke;
-    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 60px;
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
+.luffy_quote {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
 }
 
 /*  */
 /* It's style for content on forth page */
 /*  */
-#contacts{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* justify-content: center;
+#contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: center;
     align-items: center; */
-    background-color: rgba(0, 0, 0, 0.5);
-    color:white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-.contacts_link{
+.contacts_link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forth_page img {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.forth_page footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #d67703;
+}
+@media only screen and (max-width: 960px) {
+  #about {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+  }
+  #luffy_text {
+    top: 45%;
+    left: 55%;
+    width: 150px;
+  }
 
+  .navbar_menu {
+    flex-direction: column;
+  }
 
-}
+  #hamnav label {
+    display: inline-flex;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+  }
 
-.forth_page img{
-    width:100px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
-.forth_page footer{
-    width: 100%;
-    text-align: center;
-}
-
-
-footer a{
-    text-decoration: none;
-    color:white
-}
-footer a:hover{
-    color:#d67703
-}
-@media only screen and (max-width: 960px){
-    #about{
-        display: flex;
-        flex-direction: column;   
-    }
-    #luffy_text{
-        top:45%;
-        left:55%;
-        width:150px;
-    }
-
-    .navbar_menu{
-        flex-direction: column;
-    }
-
-    #hamnav label{
-        display: inline-flex;
-        color: white;
-        padding: 20px;
-        font-size: 25px;
-    }
-
-    #hamitems{
-        display: none;
-    }
-    #hamnav input:checked ~ #hamitems { display: block; }
-
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
 }
