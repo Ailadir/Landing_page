@@ -88,14 +88,19 @@ header .navbar {
 
 .left_side {
   display: inline-flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
-.left_side img {
+.left_side .logo {
   width: 15rem;
   max-height: 82.465px;
 }
-#music_button {
+.music_control {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.music_control .music_button {
   width: 3rem;
   margin: 10px;
 }
@@ -324,5 +329,8 @@ footer a:hover {
   }
   #hamnav input:checked ~ #hamitems {
     display: block;
+  }
+  .luffy_quote {
+    transition: 3s;
   }
 }
