@@ -1,14 +1,15 @@
+// Script for music
 var mysong = new Audio();
 mysong.src = './ff2.mp3';
 
 const playsong = () => {
   mysong.play();
 };
-
 const pausesong = () => {
   mysong.pause();
 };
 
+// Script for fading in-out of picture in first section
 const toHide = document.querySelector('.luffy_text');
 const toShow = document.querySelector('.luffy_quote');
 window.addEventListener('scroll', () => {

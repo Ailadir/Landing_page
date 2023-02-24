@@ -86,9 +86,18 @@ header .navbar {
   display: none;
 }
 
-.navbar img {
+.left_side {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_side img {
   width: 15rem;
   max-height: 82.465px;
+}
+#music_button {
+  width: 3rem;
+  margin: 10px;
 }
 .navbar img:hover {
   cursor: pointer;
