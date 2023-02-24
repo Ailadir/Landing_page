@@ -222,7 +222,7 @@ hr {
 .luffy_quote {
   opacity: 0;
   transition: 1s;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -285,7 +285,7 @@ footer a:hover {
 }
 .fade_in {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
   transition: 1s;
 }
 @media only screen and (max-width: 960px) {
