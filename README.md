@@ -3,7 +3,7 @@
 One-piece fan page, created as a part of TOP cirriculum.
 
 ### Features
-*Music play - pause button
+* Music play - pause button
 
 ### Technologies Used
 * HTML
@@ -11,9 +11,8 @@ One-piece fan page, created as a part of TOP cirriculum.
 * JavaSciprt
 
 ### Tools
-- Visual Studio Code
-- Git and GitHub
-- Create React App
-- ESLint + Airbnb JavaScript style guide
-- Prettier code formatter
-- Linux terminal
+* Visual Studio Code
+* Git and GitHub
+* ESLint + Airbnb JavaScript style guide
+* Prettier code formatter
+* Linux terminal
