@@ -1,12 +1,16 @@
 # The Odin Project Landing_page
+## About the project:
+One-piece fan page, created as a part of TOP cirriculum.
 
-
-
-It is my first landing page, with one piece themo.
-I created it right now by using html+css and in future will improve it with javascript.
-
-### **Technologies Used:**
+### Technologies Used
 * HTML
 * CSS
 * JavaSciprt
 
+### Tools:
+- Visual Studio Code
+- Git and GitHub
+- Create React App
+- ESLint + Airbnb JavaScript style guide
+- Prettier code formatter
+- Linux terminal
