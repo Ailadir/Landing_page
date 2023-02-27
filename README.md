@@ -2,12 +2,15 @@
 ## About the project:
 One-piece fan page, created as a part of TOP cirriculum.
 
+### Features
+*Music play - pause button
+
 ### Technologies Used
 * HTML
 * CSS
 * JavaSciprt
 
-### Tools:
+### Tools
 - Visual Studio Code
 - Git and GitHub
 - Create React App
